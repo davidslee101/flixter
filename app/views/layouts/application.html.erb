@@ -6,8 +6,8 @@
 	  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
 	  <%= csrf_meta_tags %>
 	</head>
-	<body>
-    <div class ="wrap">
+	<body class="Site">
+    <div id ="wrap">
     	<nav class="navbar navbar-inverse" role="navigation">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -53,13 +53,17 @@
 
     </div>
 
+    <main class="Site-content">
+
+    </main>
+
     <br class="clr" />
 
     <div id="footer">
       <div class="container">
-        <b>Footer Here</b>
-        <br />
-        <%= link_to 'Link', '#' %>
+      <b>Teachers</b>
+      <br />
+      <%= link_to 'Teach a Course', new_instructor_course_path %>
       </div>
     </div>
 
