@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
-gem 'mini_magick'
-
 gem 'carrierwave'
+gem 'mini_magick'
+gem 'carrierwave-aws'
+
+gem "figaro"
 
 gem 'simple_form'
 
