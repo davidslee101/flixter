@@ -1,4 +1,6 @@
 source 'https://rubygems.org'
+gem 'stripe'
+
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'carrierwave-aws'
