@@ -31,11 +31,11 @@ class Instructor::SectionsController < ApplicationController
 
   helper_method :current_course
   def current_course
-    # @current_course ||= Course.find(params[:course_id])
-    current_section.course
+    @current_course ||= Course.find(params[:course_id])
+    # @current_section.course
   end
 
   def section_params
-    params.require(:section).permit(:title :row_order_position)
+    params.require(:section).permit(:title, :row_order_position)
   end
 end
