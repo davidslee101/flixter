@@ -3,11 +3,11 @@
 
 	<div class="frosty col-xs-10 col-xs-offset-1 text-center">
 		</br>
-		<h1>Learn Magic from the Pros</h1>
+		<h1>Make learning fun and magical</h1>
 		</br>
-		<h2>I'm an illusionist, Michael.</h2>
+		<h2>Be a lifelong student.</h2>
 		</br>
-		<%= link_to 'Learn More', courses_path, :class => 'btn btn-success' %>
+		<%= link_to 'Learn', courses_path, :class => 'btn btn-success' %>
 		</br></br>
 	</div>
 
@@ -16,14 +16,25 @@
 <br />
 <div class="col-xs-10 col-xs-offset-1 features text-center">
   <div class="col-sm-4">
-    <h3>Feature 1</h3>
+  	<%= image_tag 'teach.png', :class => 'home-pic'%>
+   <br /><br />
+    <h3>Teach</h3>
+    <p>Step by step video instructions on how to do anything from building a web application to growing your own garden</p>
   </div>
 
   <div class="col-sm-4">
-    <h3>Feature 2</h3>
+  	<%= image_tag 'learn.png',:class => 'home-pic' %>
+  	<br /><br />
+    <h3>Learn</h3>
+    <p> Get online support and mentoring from your instructor as you progress through the lessons at your own pace.</p>
   </div>
 
   <div class="col-sm-4">
-    <h3>Feature 3</h3>
+  	<%= image_tag 'earn.png', :class => 'home-pic'%>
+    <br /><br />
+    <h3>Earn</h3>
+    <p>Have a wealth of knowledge that you want to share with the world? Make money by teaching others what you know and are passionate about.</p>
   </div>
+
+  
 </div>
