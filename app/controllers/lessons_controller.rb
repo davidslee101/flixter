@@ -1,6 +1,6 @@
 class LessonsController < ApplicationController
 	before_action :authenticate_user!
-  before_action :require_course_enrollment_for_lessons, :only => [:show]
+  # before_action :require_course_enrollment_for_lessons, :only => [:show]
 
   def show
   end
@@ -9,12 +9,12 @@ class LessonsController < ApplicationController
 
   private
 
-  def require_course_enrollment_for_lessons
+ #  def require_course_enrollment_for_lessons
 
-    	if !current_lesson.section.course.user.enrolled_in?(the_course)
-    		redirect_to course_path(current_lesson.section.course), alert: 'Please enroll to view lessons'
-      end
-	end
+ #    	if !current_lesson.section.course.user.enrolled_in?(the_course)
+ #    		redirect_to course_path(current_lesson.section.course), alert: 'Please enroll to view lessons'
+ #      end
+	# end
 
 
   helper_method :current_lesson
